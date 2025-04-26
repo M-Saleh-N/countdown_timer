@@ -13,7 +13,11 @@ function Timer() {
     return () => clearInterval(interval);
   }, [seconds]);
 
-
+  return (
+    <div style={{ fontSize: "2rem", textAlign: "center", marginTop: "50px" }}>
+      Time Left: {seconds}s
+    </div>
+  );
 }
 
 export default Timer;
