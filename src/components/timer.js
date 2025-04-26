@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import './Timer.css'
 
 function Timer() {
-  const [seconds, setSeconds] = useState(60);
+  const [seconds, setSeconds] = useState(120);
 
   useEffect(() => {
     if (seconds <= 0) return;
